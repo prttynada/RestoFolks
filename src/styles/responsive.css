@@ -1,0 +1,105 @@
+@media screen and (max-width: 499px) {
+  .nav {
+    z-index: 10;
+    background-color: #362706;
+    width: 300px;
+    position: absolute;
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    transition: transform 0.3s ease;
+  }
+
+  .open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .header__menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .post-item__content {
+    padding: 16px 32px 32px 32px;
+  }
+
+  .resto-list__label {
+    font-size: 2.5rem;
+  }
+
+  .post-item__title {
+    font-size: 2rem;
+  }
+
+  .post-item__description {
+    font-size: 14px;
+  }
+
+  .item {
+    grid-template-columns: auto 1fr;
+    font-size: 1.43rem;
+  }
+
+  .item .item__rating {
+    font-size: 1.6rem;
+  }
+
+  .item .item__name {
+    font-size: 2.5rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .item .item__info {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .item__description p {
+    font-size: 20px;
+  }
+
+  ol li {
+    font-size: 20px;
+  }
+
+  .item__reviews__date {
+    font-size: 16px;
+  }
+
+  .item__reviews ol li h4 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 16px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .nav__list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    max-width: 1200px;
+  }
+}
